@@ -1,0 +1,39 @@
+   0 date
+   1 date > /tmp/file
+   2 cat /tmp/file
+   3 echo hello world
+   4 echo "hello world"
+   5 echo "hello world" >> /tmp/file
+   6 cat /tmp/file
+   7 cat /atc/group
+   8 cat /etc/group
+   9 cat /etc/group | wc -l
+  10 cat /etc/group | wc 
+  11 cat /etc/group | head0
+  12 cat /etc/group | head
+  13 cat /etc/group | head -3
+  14 cat /etc/group | tail -3
+  15 history | tail -3
+  16 history | tail -3 >> /tmp/file
+  17 cat /tmp/file
+  18 cat /etc/group
+  19 cat /etc/group | grep root
+  20 cat /etc/group | grep -w user2
+  21 cat /etc/group | grep -w user2 | wc -1
+  22 cat /etc/group | grep -w user2 | wc -l
+  23 cat /etc/group | grep -w user2 | wc -l >> /tmp/file
+  24 cat /tmp/file
+  25 df
+  26 df -h
+  27 df -h | head -2
+  28 df -h | tail -2
+  29 df -h | grep 
+  30 df -h | grep /
+  31 df -h | grep -w /
+  32 df -h | grep -w / | awk '{print $5}'
+  33 cat /etc/group | grep -w user2 | sed 's/user2/roman/g'
+  34 df -h | grep -w / | awk '{print $5}' | sed 's/%//g'
+  35 history >> /tmp/file
+  36 cat tmp/file
+  37 cat /tmp/file
+  38 history > /tmp/history.txt
