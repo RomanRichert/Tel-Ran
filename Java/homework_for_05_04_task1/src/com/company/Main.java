@@ -8,7 +8,6 @@ public class Main {
         System.out.println(example("Пример строки"));
     }
     public static String example (String str) {
-        String result = ""+str.charAt(0)+str.charAt(1)+str.charAt(2)+str.charAt(3)+str.charAt(4)+str.charAt(5);
-        return result;
+        return ""+str.charAt(0)+str.charAt(1)+str.charAt(2)+str.charAt(3)+str.charAt(4)+str.charAt(5);
     }
 }
