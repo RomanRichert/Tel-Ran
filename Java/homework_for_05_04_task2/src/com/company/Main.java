@@ -14,7 +14,7 @@ public class Main {
 
         String result = "";
         while (startIndex<endIndex) {
-            result=result + str.charAt(startIndex);;
+            result=result + str.charAt(startIndex);
             startIndex++;
 
         }
