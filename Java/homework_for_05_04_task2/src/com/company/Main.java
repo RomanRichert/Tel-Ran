@@ -7,10 +7,12 @@ public class Main {
         // The method returns the substring of the given String between startIndex and endIndex
         // (startIndex inclusive endIndex exclusive). You have to use only length() and charAt() methods of String class.
         //substring(“It is my own method”,9,12) ->”own”
-        System.out.println(ownMethod(9, 12));
+        System.out.println(ownMethod("It is my own method", 9, 12));
+
+
     }
-    public static String ownMethod (int startIndex, int endIndex) {
-        String str = "It is my own method";
+    public static String ownMethod ( String str, int startIndex, int endIndex) {
+                                 // зачем здесь нужен "length()" ?
 
         String result = "";
         while (startIndex<endIndex) {
