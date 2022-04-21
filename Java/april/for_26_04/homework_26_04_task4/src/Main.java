@@ -4,11 +4,12 @@ public class Main {
         //“9*(8+3)-( (9+1)5)” -> true
         //“9(8+3)- (9+1)5)” -> false
         //“98+3)-( (9+1)*5” -> false
-        System.out.println(parentheses("9*(8+3)-( (9+1)5)"));
+        System.out.println(parentheses("9*(8+3)-( (9+1)5)"));   //true, все остальные false
         System.out.println(parentheses("9(8+3)- (9+1)5)"));
         System.out.println(parentheses("98+3)-( (9+1)*5"));
         System.out.println(parentheses("()))))((((()"));
-        System.out.println(parentheses("(356(GG))56)(6"));
+        System.out.println(parentheses("(356(GG))56)("));
+        System.out.println(parentheses(")9*(8+3)-( ((9+1)5)"));
     }
 
     public static Boolean parentheses(String str) {
@@ -34,6 +35,9 @@ public class Main {
         } else {
             result = false;
         }
+        if (( str.charAt(0) == ')') || (str.charAt(str.length()-1) == '(') ) { // при случае неправильной скобки с краю
+            result = false;
+        }
 
         if (result == true) {                                      // проверяет какая скобка первая
         while ((i < str.length()) && (str.charAt(i-1) != ')' ) ) {
@@ -52,7 +56,7 @@ public class Main {
         if (result == true) {                               // проверяет какая скобка последняя
             i = str.length() -2;
             fix = 0;
-            while ((i > 0) && (str.charAt(i +1) != '(')) {
+            while ((i >= 0) && (str.charAt(i +1) != '(')) {
                 if (str.charAt(i) == ')') {
                     fix = 1;
                 }
