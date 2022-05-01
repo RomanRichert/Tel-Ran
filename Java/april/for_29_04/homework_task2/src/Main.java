@@ -16,7 +16,7 @@ public class Main {
         int maxArrElement = 0;
         int maxIndex = 0;
         while (i < array.length) {
-            arrElement = array[i];
+            arrElement = array[i];  // зачем? переменная arrElement не нужна! У вас есть array[i]  
             if (arrElement > maxArrElement) {
                 maxArrElement = arrElement;
                 maxIndex = i;
