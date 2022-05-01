@@ -8,7 +8,7 @@ public class Main {
     public static void printsAllElementsOfTheGivenArrayThatBiggerThanAverageValueOfArrayElements (int[] arr) {
         int i = 0;
         int sum = 0;
-        while (i < arr.length) {
+        while (i < arr.length) { //!
             sum = sum + arr[i];
             i++;
         }
