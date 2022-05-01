@@ -17,12 +17,6 @@ public class Main {
         int lessThanNumber = 0;
         int greaterThanNumber = arr.length ;
 
-        if (arr.length % 2 != 0) {
-            newArray[arr.length /2 +1] = num;           // вставляю число в середину (если она есть)
-        } else {
-            newArray[arr.length /2] = num;              // вставляю число в 2 средних ячейки, лишняя перезапишется
-            newArray[arr.length /2 +1] = num;
-        }
 
         while (i < arr.length) {
             if (arr[i] < num) {
@@ -34,6 +28,8 @@ public class Main {
             }
             i++;
         }
+
+        newArray[lessThanNumber]= num;
 
 
         return newArray;
