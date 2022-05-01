@@ -12,9 +12,12 @@ public class Main {
     public static int[] newArrayMethod(int n) {
 
         int[] newArray = new int[n];
-        int i = 0;
+        int i = 0; 
+        if(n>30){   // the max value of n is 30
+            n=30;
+        }
         while (i < n) {
-            newArray[i] = (int) Math.pow(2, i);
+            newArray[i] = (int) Math.pow(2, i); // не обязательно использовать Math.pow, умножение на 2 предыдущего значения эфективнее 
             i++;
         }
 
