@@ -41,7 +41,7 @@ public class Main {
      i = 0;
      a=0;
      int k =0;
-     while (i < str.length()) {
+     while (i < str.length()) {                                       // собираю массив
          if (str.charAt(i) == delimiter) {
              strArray[a] = str.substring(k, delimiterIndex[a]);
              k = delimiterIndex[a]+1;
@@ -51,7 +51,7 @@ public class Main {
      }
      strArray[strArray.length-1] = str.substring(k);
 
-     String[] ifDelimiterIsInTheEnd = {(strArray[0])};
+     String[] ifDelimiterIsInTheEnd = {(strArray[0])};                      // учитываю особые случаи
      String[] ifDelimiterIsAtTheStart = {(strArray[strArray.length-1])};
     if (delimiterCount == 1 && str.charAt(str.length()-1) == delimiter) {
          return ifDelimiterIsInTheEnd;
