@@ -10,14 +10,14 @@ public class Main {
         System.out.println(Arrays.toString(longToArray(input)));
 
     }
-    public static long[] longToArray (long number) {
+    public static int[] longToArray (long number) {
 
-        long[] array = new long[String.valueOf(number).length()];
+        int[] array = new int[String.valueOf(number).length()];
         int i = array.length-1;
 
         while (i >= 0) {
-            array[i] = number % 10;
-            number = (number - array[i]) / 10;
+            array[i] = (int) number % 10;
+              number = ((int) number - array[i]) / 10;
             i--;
         }
 
