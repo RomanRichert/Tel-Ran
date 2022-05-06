@@ -13,13 +13,15 @@ public class Main {
         int mathPow = 0;
         if (arr[i] >=0 && arr[i] <=9) {
             while (i >= 0) {
-                result = result + (arr[i] * (int) Math.pow(10, mathPow));
+                result = result + ((long) arr[i] * (int) Math.pow(10, mathPow));
                 mathPow++;
                 i--;
             }
         } else {
             System.out.println("Wrong array for this method!");
+
         }
+
         return result;
     }
 }
