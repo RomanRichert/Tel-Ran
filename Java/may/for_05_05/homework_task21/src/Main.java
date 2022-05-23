@@ -2,12 +2,13 @@ public class Main {
     public static void main(String[] args) {
         //*Дано два массива int. Написать метод, который считает, сколько значений из первого
         //массива присутствуют во втором. Например: {10, 14,1,4,3}, {0,1, 6,10, 1,4,13} ->3
-        int[] array1 = {10, 14,1,4,3};
-        int[] array2 = {0,1, 6,10, 1,4,13};
+        int[] array1 = {10, 14, 1, 4, 3};
+        int[] array2 = {0, 1, 6, 10, 1, 4, 13};
 
         identicalIntegers(array1, array2);
     }
-    public static void identicalIntegers (int[] arr1, int[] arr2) {         // метод считает неправильно, если
+
+    public static void identicalIntegers(int[] arr1, int[] arr2) {         // метод считает неправильно, если
         int i = 0; //шаг для внешнего цикла                                    в наименьшем по размеру массиве
         int ii;    // шаг для внутреннего цикла                                есть повторяющиеся значения
         int a;
