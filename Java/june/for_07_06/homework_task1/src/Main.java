@@ -1,3 +1,8 @@
+import com.company.Dress;
+import com.company.Grocery;
+import com.company.Laptop;
+import com.company.Smartphone;
+
 public class Main {
     public static void main(String[] args) {
         // Допустим, у нас есть магазин. В нашем магазине есть товары трех категорий: продукты, электроника
@@ -19,6 +24,11 @@ public class Main {
 
         Grocery onion = new Grocery("Onion 1Kg", 1.99);
         Grocery milk = new Grocery("Milk 1L", 0.87);
+
+        //smartphone1.buy(2);
+        //laptop1.buy(3);
+
+
 
 
     }
