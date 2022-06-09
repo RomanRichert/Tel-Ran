@@ -1,6 +1,6 @@
 package com.company;
 
-public class Product {
+public abstract class Product {
     private String name;
     private double price;
 
