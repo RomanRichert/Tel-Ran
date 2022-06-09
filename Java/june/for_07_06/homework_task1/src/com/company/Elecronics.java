@@ -16,12 +16,14 @@ public abstract class Elecronics extends Product {
         getWarranty(amount);
         } else {
             System.out.println("Thank you for your purchase!\n We will be glad to see you again!");
+            footer();
         }
     }
     private void getWarranty(int amount) {
         super.header();
         System.out.println(getName()+" additional warranty\n              for 5 years");
         System.out.println("TO PAY:                "+amount*getPrice()*5/100+" Euro");
+        footer();
 
 
 

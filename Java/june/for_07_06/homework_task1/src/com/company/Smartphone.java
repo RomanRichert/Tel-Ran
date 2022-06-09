@@ -10,7 +10,9 @@ public class Smartphone extends Elecronics {
     }
     @Override
     public void buy(int amount) {
-        super.buy(amount);
+        header();
+        System.out.println("01 "+getName());
+        System.out.println("               "+amount+" X   "+getPrice()+" = "+amount*getPrice());
         System.out.println("02 contract");
         System.out.println("               "+amount+" X   "+contractPrice+" = "+amount*contractPrice);
         System.out.println();
@@ -18,7 +20,8 @@ public class Smartphone extends Elecronics {
         System.out.println();
         System.out.println("TO PAY:                "+(amount*(getPrice()-(getPrice()*70/100)+contractPrice))+" Euro");
         System.out.println("               Monthly: "+amount*contractPrice+" Euro");
-        System.out.println("----------------------------------");
+        System.out.println();
+        footer();
         addGuarantee(amount);
 
         

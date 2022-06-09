@@ -10,5 +10,6 @@ public class Grocery extends Product {
         super.buy(amount);
         System.out.println("Delivery             4.99 Euro");
         System.out.println("TO PAY:              "+(amount*getPrice()+4.99)+" Euro");
+        footer();
     }
 }

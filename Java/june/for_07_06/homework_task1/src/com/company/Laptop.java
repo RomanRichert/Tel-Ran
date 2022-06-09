@@ -13,6 +13,5 @@ public class Laptop extends Elecronics {
     public void buy(int amount) {
         super.buy(amount);
         addGuarantee(amount);
-
     }
 }

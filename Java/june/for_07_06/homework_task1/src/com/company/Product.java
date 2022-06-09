@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Product {
+public class Product {
     private String name;
     private double price;
 
@@ -29,11 +29,12 @@ public abstract class Product {
         System.out.println("            Holzgasse 1,          ");
         System.out.println("          53721 Siegburg          ");
         System.out.println("           022411483760           ");
-        System.out.println("----------------------------------");
+        footer();
     }
 
     private void toPay(int amount) {
         System.out.println("TO PAY:            "+amount*price+" Euro");
+        footer();
     }
 
     public String getName() {
@@ -43,5 +44,11 @@ public abstract class Product {
     public void discount (int discount) {
         price = price-(price*discount/100);
     }
+
+    protected void footer (){
+        System.out.println("----------------------------------");
+    }
 }
+
+
 
