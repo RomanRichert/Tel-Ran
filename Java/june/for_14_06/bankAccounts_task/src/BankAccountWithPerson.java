@@ -1,8 +1,20 @@
-public class BankAccountWithPerson extends BankAccount{
-    Person owner;
+public class BankAccountWithPerson{
+    private Person owner;
+    private String iban;
+    private double balance;
 
-    public BankAccountWithPerson(String iban, double balance, Person owner) {
-        super(iban, balance);
+    public BankAccountWithPerson(Person owner, String iban, double balance) {
         this.owner = owner;
+        this.iban = iban;
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccountWithPerson{" +
+                "owner=" + owner.getName() +
+                ", iban='" + iban + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }

@@ -1,7 +1,23 @@
 public class BankAccount {
-    String iban;
-    double balance;
+    private String iban;
+    private double balance;
 
     public BankAccount(String iban, double balance) {
+    }
+
+    public String getIban() {
+        return iban;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "iban='" + iban + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }
