@@ -37,7 +37,7 @@ public class Main {
     }
 
     public static void print(Movie[] movieArr){
-        System.out.println("                     Name                    Release year "+"          Genre              "+"Rating"+" ");
+        System.out.println("                     Name                    Release year "+"          Genre              "+"Rating ");
         for (Movie u:movieArr ) {
             System.out.println(u);
         }
