@@ -19,12 +19,12 @@ public class Main {
 
         List<BankAccount> accounts3 = new ArrayList<>();
         accounts3.add(new BankAccount("null", 0));
-        accounts3.add(new BankAccount("kakto", 0));
+        accounts3.add(new BankAccount(null, 0));
 
         List<Person> owners = new ArrayList<>();
         owners.add(new Person("Roman", accounts1));
         owners.add(new Person("Anna", accounts2));
-        owners.add(new Person("kakto", accounts3));
+        owners.add(new Person(null, accounts3));
 
 
 
