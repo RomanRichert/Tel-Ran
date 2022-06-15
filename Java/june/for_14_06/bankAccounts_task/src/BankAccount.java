@@ -3,6 +3,8 @@ public class BankAccount {
     private double balance;
 
     public BankAccount(String iban, double balance) {
+        this.iban = iban;
+        this.balance = balance;
     }
 
     public String getIban() {

@@ -20,9 +20,6 @@ private List<BankAccount> accounts;
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", accounts=" + accounts +
-                '}';
+        return "Name: " + name + " \n"+"Accounts: "+accounts;
     }
 }

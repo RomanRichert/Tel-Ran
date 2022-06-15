@@ -19,27 +19,30 @@ public class Main {
 
         List<BankAccount> accounts3 = new ArrayList<>();
         accounts3.add(new BankAccount("null", 0));
-        accounts3.add(new BankAccount(null, 0));
+        accounts3.add(new BankAccount("kakto", 0));
 
         List<Person> owners = new ArrayList<>();
         owners.add(new Person("Roman", accounts1));
         owners.add(new Person("Anna", accounts2));
-        owners.add(new Person(null, accounts3));
+        owners.add(new Person("kakto", accounts3));
 
-        //System.out.println(owners);
+
+
         System.out.println(listOfPersonToListOfBAWP(owners));
 
     }
 
     public static List<BankAccountWithPerson> listOfPersonToListOfBAWP(List<Person> persons){
-        persons = new ArrayList<>();
+
         List<BankAccountWithPerson> bawp = new ArrayList<>();
         int i = 0;
         for (Person p : persons) {
             bawp.add(new BankAccountWithPerson(p, p.getAccounts().get(i).getIban(), p.getAccounts().get(i).getBalance()));
             i++;
+            System.out.println(p);
 
         }
+
         return bawp;
     }
 }
