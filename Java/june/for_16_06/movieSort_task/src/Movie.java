@@ -1,4 +1,4 @@
-public class Movie<Movie>{
+public class Movie{
     private String name;
     private String genre;
     private double rating;
@@ -31,6 +31,6 @@ public class Movie<Movie>{
 
     @Override
     public String toString() {
-        return name + " ("+releaseYear+")" + "| " + genre  + "| Rating IMDb: " + rating;
+        return name + " ("+releaseYear+")" + " | " + genre  + " | Rating IMDb: " + rating;
     }
 }
