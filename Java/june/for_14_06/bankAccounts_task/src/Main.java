@@ -28,21 +28,28 @@ public class Main {
 
 
 
-        System.out.println(listOfPersonToListOfBAWP(owners));
+       print(listOfPersonToListOfBAWP(owners));
 
     }
 
     public static List<BankAccountWithPerson> listOfPersonToListOfBAWP(List<Person> persons){
 
         List<BankAccountWithPerson> bawp = new ArrayList<>();
-        int i = 0;
-        for (Person p : persons) {
-            bawp.add(new BankAccountWithPerson(p, p.getAccounts().get(i).getIban(), p.getAccounts().get(i).getBalance()));
-            i++;
-            System.out.println(p);
 
+        for (Person p : persons) {
+            int j = 0;
+            for (BankAccount a : p.getAccounts()) {
+                bawp.add(new BankAccountWithPerson(p, p.getAccounts().get(j).getIban(), p.getAccounts().get(j).getBalance()));
+                j++;
+            }
         }
 
         return bawp;
+    }
+
+    public static void print (List<BankAccountWithPerson> bawp){
+        for (BankAccountWithPerson b: bawp){
+            System.out.println(b);
+        }
     }
 }
