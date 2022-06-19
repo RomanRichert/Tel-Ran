@@ -23,7 +23,7 @@ public class Main {
         listOfIntegers1.add(9);
         listOfIntegers1.add(4);
 
-        System.out.println("Enter some number. We will search for a pair of numbers in the list, that can give your number back in its sum.");
+        System.out.println("Enter some number. We will search for a pair of numbers in the list, that can give your number back in their sum.");
         System.out.println(canWeGetYourNumber(sc.nextInt(), listOfIntegers1));
     }
 
