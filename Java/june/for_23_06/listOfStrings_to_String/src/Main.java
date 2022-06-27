@@ -20,7 +20,7 @@ public class Main {
         stringList.add("yet");
 
         System.out.println(stringListToString(stringList));
-        System.out.println("----------------------------");
+        System.out.println("----------------------------рпилор öä");
         System.out.println(stringListToString2(stringList));
 
     }
